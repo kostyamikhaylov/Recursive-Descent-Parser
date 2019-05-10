@@ -2,6 +2,24 @@
 For my own C-like language
 
 
+//
+//	RULES:
+//	
+//	N::=['0'-'9']+
+//	P::={'('E')'}|N
+//	X::=P{'^'X}*
+//	T::=X{['*''/']X}*
+//	E::=T{['+''-']T}*
+//	A::=E|{Id'='E}
+//	I::='if''('A')'O
+//	O::=[AIC]';'
+//	C::='{'O*'}'
+//	G::=C'\0'
+//
+//
+
+
+
 Examples of what it can do:
 
 ./a.out {x=2\;}
